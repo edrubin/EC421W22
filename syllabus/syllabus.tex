@@ -1,0 +1,264 @@
+\documentclass[10pt]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+% \usepackage{fontspec}
+
+\usepackage[margin=1.15in]{geometry}
+\usepackage{setspace, titling}
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+}
+
+%% FONTS
+\usepackage{fontspec}
+% See: https://tex.stackexchange.com/a/50593
+\setmainfont{Fira Sans Extra Condensed} %
+% \setmainfont{PT Sans} %
+\usepackage{marvosym} % For cool symbols.
+\usepackage{fontawesome} % Ditto
+
+\usepackage[normalem]{ulem} %% For strikeout font: \sout()
+
+\usepackage[dvipsnames]{xcolor}
+\definecolor{uo_green}{HTML}{154733}
+\definecolor{forest_green}{HTML}{006241}
+\definecolor{pine_green}{HTML}{007935}
+\definecolor{grass_green}{HTML}{62A70F}
+\definecolor{golden_yellow}{HTML}{FFD200}
+\definecolor{cool_gray}{HTML}{54565B}
+\definecolor{light_cool_gray}{HTML}{A8A8AA}
+
+\usepackage[colorlinks = true,
+linkcolor = pine_green,
+urlcolor  = pine_green,
+citecolor = pine_green,
+anchorcolor = black]{hyperref}
+\usepackage{graphicx}
+
+% For table formatting:
+\usepackage{array, booktabs, caption, siunitx}
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+
+\begin{document}
+
+\title{
+	\texttt{\textbf{Introduction to Econometrics} [EC421]}\\[1em]
+	\large Winter 2022 Syllabus
+}
+\author{Dr. Edward Rubin, Dept. of Economics, University of Oregon}
+%\date{}  % Toggle commenting to test
+\date{\vspace{-5ex}}
+
+\maketitle
+
+\section*{Basics}
+
+\begin{table}[!h]
+	\ra{1.2}
+\begin{tabular}{@{\extracolsep{5pt}} l l l l l @{}}
+	& \underline{\textbf{{Lecture}}} & \underline{\textbf{{Lab}}} \\
+	\faClockO & Mo. \& We. 2:00p--3:20p & See below \\
+	\faMapMarker & \href{https://map.uoregon.edu/be2cddeea}{129 McKenzie Hall} & See below \\
+	\faUser & \textbf{Edward Rubin} & \textbf{Emmett Saulnier} \\
+  \faPaperPlaneO & \href{mailto:edwardr@uoregon.edu}{edwardr@uoregon.edu} & \href{mailto:emmetts@uoregon.edu}{emmetts@uoregon.edu} & Use ``\texttt{EC421}'' in email subject.\\
+  \faChevronRight & \href{https://edrub.in}{edrub.in} & \href{https://www.emmettsaulnier.com}{emmettsaulnier.com} \\
+  \faQuestionCircleO & TBA (Zoom) & TBA (Zoom) & Feel free to contact us if you cannot make these office hours. \\
+  \faBook & \multicolumn{4}{l}{\href{http://smile.amazon.com/Introduction-Econometrics-Christopher-Dougherty/dp/0199676828/}{Introduction to Econometrics, 5\textsuperscript{th} ed. }} \\
+  \faBook & \multicolumn{4}{l}{\href{https://www.amazon.com/Mastering-Metrics-Path-Cause-Effect/dp/0691152845/}{Mastering `Metrics: The Path from Cause to Effect}}
+\end{tabular}
+\end{table}
+
+\noindent \textbf{Email note:} We will do our best to respond promptly to your emails. Our responses may be slower over weekends/holidays. There may be times that our responses take up to 48 hours. Please do not repeatedly send the same email.
+
+\begin{table}[!h]
+  % \centering
+  \ra{1.2}
+\begin{tabular}{@{\extracolsep{5pt}} lll @{}}
+  & \underline{\textbf{{Materials from previous courses}}}\\
+  \faChevronRight & \href{https://github.com/edrubin/EC421W21}{https://github.com/edrubin/EC421W21} & 421, Winter 2021 course on Github\\
+  \faChevronRight & \href{https://github.com/edrubin/EC421S20}{https://github.com/edrubin/EC421S20} & 421, Spring 2020 course on Github\\
+  \faChevronRight & \href{https://github.com/edrubin/EC421W20}{https://github.com/edrubin/EC421W20} & 421, Winter 2020 course on Github\\
+  \faChevronRight & \href{https://github.com/edrubin/EC421S19}{https://github.com/edrubin/EC421S19} & 421, Spring 2019 course on Github\\
+  \faChevronRight & \href{https://github.com/edrubin/EC421W19}{https://github.com/edrubin/EC421W19} & 421, Winter 2019 course on Github\\
+\end{tabular}
+\end{table}
+
+\begin{table}[!h]
+	% \centering
+	\ra{1.2}
+\begin{tabular}{@{\extracolsep{5pt}} r l ll @{}}
+	& & \underline{\textbf{Monday Labs}} & \underline{\textbf{Tuesday Labs}} \\
+  Synchronous lab & & 4:00p--5:20p (PST), \href{https://map.uoregon.edu/d5eb7ace3}{442 McKenzie Hall} & 4:00p--5:20p (PST), \href{https://map.uoregon.edu/d5eb7ace3}{442 McKenzie Hall} \\
+  Asynchronous lab & & Zoom (links on Canvas) & Zoom (links on Canvas) \\
+  Lab instructor & & \textbf{Emmett Saulnier} & \textbf{Emmett Saulnier} \\
+  & & \href{mailto:emmetts@uoregon.edu}{emmetts@uoregon.edu} & \href{mailto:emmetts@uoregon.edu}{emmetts@uoregon.edu} \\
+\end{tabular}
+\end{table}
+
+\paragraph{Labs:} There are two synchronous labs---open for anyone to attend. We will also record each of these synchronous labs and make the videos/materials. You are allowed to attend a lab different from the one you registered for.
+
+\section*{Learning/patience}
+
+As I am sure you are aware, we \textit{all} are facing a lot of changes and challenges this quarter---true for the last two years.
+
+I am going to do my best to offer you a high-quality econometrics course. There will be hiccups along the way---technology, logistics, health, etc.---and I request your patience along the way. I know you are also dealing with a lot of challenges, so I offer my own patience to you. Let's make the best of this situation. 
+
+\section*{Recommendations}
+
+\begin{enumerate}
+  \item \textbf{Be kind}.
+  \item \textbf{Take responsibility} for your own education and try to \textbf{learn} as much as you can.
+  \item \textbf{Do your own work}.
+  \item Develop your \textbf{intuition}---\textit{e.g.}, why does regression work in one situation and fail in another?
+  \item \textbf{Learn \texttt{R}}. Struggle while you try---and use \textbf{Google} to figure things out.
+  \item Come to \textbf{office hours}.\footnote{Two related articles from NPR on office hours: \href{https://www.npr.org/2019/10/05/678815966/college-students-how-to-make-office-hours-less-scary}{\textit{College Students: How to Make Office Hours Less Scary}} and \href{https://www.npr.org/2019/10/02/766568824/uncovering-a-huge-mystery-of-college-office-hours}{\textit{Uncovering A Huge Mystery Of College: Office Hours}}.}
+  \item \textbf{Ask for help early}---don't wait until the end of the term.
+  \item \textbf{Leave enough time to get help} (start assignments/projects early enough to get help with issues).
+\end{enumerate}
+
+\section*{Course summary}
+
+\paragraph{Description:} This course aims to prepare economics majors for the demands of real-world applications and for the econometrics required by other 400-level classes. Toward this goal, we will examine the assumptions that underly the econometric and statistical models that you learned in Economics 320 (along with Math 243). These models imposed strong assumptions that are often violated in practice. We will relax these assumptions---replacing them with looser, more palatable assumptions---and derive, build, and estimate the resulting new models. By the end of this course, students should have the ability to statistically examine the bulk of economic issues using econometrics---knowing how to empirically test economic models and knowing the strengths, weaknesses, and assumptions of their chosen route of analysis.
+
+Learning statistical programming is inherent to practicing applied econometrics. Thus, throughout this course we will also teach the statistical programming language \texttt{{R}}.
+
+\paragraph{Prerequisites:} This course requires Economics 320 (Introduction to Econometrics)---we assume you are comfortable with the content in the first six chapters of the Dougherty \textit{Introduction to Econometrics} (ItE) textbook.
+
+\section*{Software and tools}
+
+\paragraph{R:} We will use the statistical programming language \href{https://www.r-project.org/}{\textbf{\texttt{R}}}, and we will use \href{https://www.rstudio.com}{\textbf{\texttt{RStudio}}} to interact with \texttt{R}.
+
+\paragraph{Learning R:} will require time and effort, but it is a powerful and versatile tool that is valued by many employers. Put in the requisite effort and time, and you will be rewarded. Computers around the university already have R, but I strongly recommend that you install \texttt{R} and \texttt{RStudio} on your own computer.
+
+If you are concerned about learning \texttt{R}---or want to learn more/quickly---I suggest that you check out the following free, online resources.
+\begin{itemize}
+  \item \href{https://www.datacamp.com/courses/free-introduction-to-r}{DataCamp's \textit{Introduction to R}}
+  \item \href{https://www.teamleada.com/courses/r-bootcamp}{TeamLeada's \textit{R Bootcamp}}
+  \item \href{https://www.computerworld.com/article/2497143/business-intelligence-beginner-s-guide-to-r-introduction.html}{Computerworld's \textit{Beginner's guide to R}}
+\end{itemize}
+The folks at \texttt{RStudio} put together a very nice \href{https://education.rstudio.com/learn/beginner/}{set of resources}.
+
+\section*{Labs, homework, and exams}
+
+\paragraph{Lab:} This course includes a lab, which is integral to learning the material in (and passing) this course. For now, we are requesting that you attend the lab for which you registered. The lab includes both general econometrics instruction and computing tips necessary to complete the homework assignments---linking the lecture material to \texttt{R}---as well as topics which the lecture may not be cover. \textbf{The lab is the best way you can get quick feedback and help in this course.} The GEs will also post a video for you to watch before the remote lab meeting/call.
+
+See above for lab times.
+
+\paragraph{Problem Sets}
+\begin{itemize}
+  \item You will \textbf{turn in assignments online via Canvas}. The submission should include your written answers and your figures---and a separate file for your code.
+  \item Assignments will be due approximately every 1--2 weeks.
+  \item Assignments \textbf{must be in your own words}. \textbf{Do not copy}.
+  \item See below for \textbf{late policy}.
+\end{itemize}
+Feel free to work together on the assignments. Unless explicitly stated, \textbf{each student is required to write and submit independent answers}. This means that word-for-word copies will not be accepted and will be viewed as academic dishonesty. In other words: You must place answers \textbf{in your own words}. \textbf{Copying from other people (even if you worked with them) or from previous assignments is considered cheating.}
+
+\paragraph{Late policy}
+\begin{itemize}
+  \item We accept assignments \textbf{up to 48 hours late}, but we \textbf{subtract 2 percentage points for each hour it is late.}
+  \item For example, you turn in an assignment 12 hours late and would have received 85\%. We subtract 12$\times$2$=$24 percentage points, meaning you will receive 85\%$-$24\%=61\%.
+  \item No exceptions.
+\end{itemize}
+
+\paragraph{Exams}
+\begin{itemize}
+  \item The \textbf{in-class midterm will likely be February 9, 2022 (during class)}.
+  \item The \textbf{final exam will be on Tuesday, March 15, 2022, 2:45p--4:45p}.
+\end{itemize}
+We will not offer early exams. Each exam will be accompanied by a more open-ended project.
+
+\section*{Grades}
+
+Grades for this class will be assigned based on the following assignments: (approximately) biweekly homework assignments, one midterm exam, one final exam, and two projects. Final grades will be determined based on your rank-ordered position within the class (\textit{i.e.}, the course is curved). You can track your grades for individual assignments on Canvas. The weights for the final grade:
+\begin{table}[!h]
+  \ra{1.2}
+  \centering
+  \begin{tabular}{@{\extracolsep{2cm}}ll@{}}
+    \textbf{Problem Sets}         & 40\% \\
+    \textbf{Midterm: Exam and Project}  & 30\% \\
+    \textbf{Final: Exam and Project}    & 30\%
+  \end{tabular}
+\end{table}
+
+\section*{Textbook and other readings}
+
+One of the goals of this course is to make you aware of the incredible array of instruction material that is freely available online. I also want to encourage you to be entrepreneurial (key for learning to program).
+
+\paragraph{Econometrics books:} There are two recommended textbooks for this course.
+
+\begin{enumerate}
+  \item \href{https://www.amazon.com/Mastering-Metrics-Path-Cause-Effect/dp/0691152845/}{\textbf{Mastering `Metrics: The Path from Cause to Effect}} by Angrist and Pischke (\textbf{MM})
+  \item \href{http://smile.amazon.com/Introduction-Econometrics-Christopher-Dougherty/dp/0199676828/}{\textbf{Introduction to Econometrics}, 5\textsuperscript{th} ed.} by Christopher Dougherty (\textbf{ItE})
+\end{enumerate}
+You should be able to purchase these books at the UO Duckstore or on Amazon (you should already have ItE from EC320). I recommend that you read the assigned readings from the textbooks. The texts provide another, complementary perspective on the material that we cover in lecture. The course schedule (farther below) contains suggested readings for each topic.
+
+\paragraph{R books:} For learning \texttt{R}, I recommend Garrett Grolemund and Hadley Wickham's \href{http://r4ds.had.co.nz}{\textbf{\textit{R} for Data Science}}, which is available for free online. Want to go deeper? Check out \href{http://adv-r.had.co.nz/}{\textbf{Advanced \textit{R}}} (Hadley Wickham, again) and \href{http://socviz.co/}{\textbf{Data Visualization: A practical introduction}} (Kieran Healy)---both books are free online.
+
+\section*{Honesty and academic integrity}
+
+You must do your own work. Do not claim credit for any work other than your own. Cheating or plagiarizing of any sort on any component of this class will result in a failing grade for the term and a report of the offense to the university. Anything you submit with your name must be in your own words. Copying from other sources---including classmates, previous assignments, and websites---is cheating. Please acquaint yourself with the \href{http://studentlife.uoregon.edu}{Student Conduct Code}.
+
+\section*{Accessibility}
+
+If you have a documented need and would like accommodations in this course, please make arrangements with me during the first week of the term. Please request that the \href{https://aec.uoregon.edu/}{Accessible Education Center} send me a letter verifying your accommodations.
+
+\section*{COVID-19 and safety}
+
+The University of Oregon (UO), in accordance with guidance from the Centers for Disease Control, Oregon Health
+Authority, and Lane County Public Health requires faculty, staff, students, visitors, and vendors across all UO locations to use face coverings when in UO owned, leased, or controlled buildings. This includes classrooms. Please correctly wear a suitable face covering during class. Students unable to wear face coverings can work with the Accessible Education Center to find a reasonable accommodation. Students refusing to wear a face covering will be asked to leave the class. 
+
+If the professor or GE is made to feel threatened or uncomfortable by a student aggressively or repeatedly refusing to properly wear a mask, the student will be reported to the university and asked to withdraw from the class (or the student will receive an F).
+
+\section*{Academic disruption}
+
+In the event of a campus emergency that disrupts academic activities, course requirements, deadlines, and grading
+percentages are subject to change. Information about changes in this course will be communicated as soon as possible by email, and on Canvas. If we are not able to meet face-to-face, students should immediately log onto Canvas and read any announcements and/or access alternative assignments. Students are also expected to continue coursework as outlined in this syllabus or other instructions on Canvas.
+
+In the event that the instructor of this course has to quarantine, this course may be taught online during that time.
+
+\section*{Tentative course outline}
+
+The table below presents the current plan for the course outline and associated textbook reading assignments. We will occasionally assign papers for you to read for class, lab, or your homework assignments. I will post these papers on Canvas. As the title of this section suggests, the timing and topics on this schedule may change.
+
+\begin{table}[htb]
+  \centering
+  \caption*{\textbf{Tentative course schedule}}
+  \ra{1.5}
+  \begin{tabular}{@{\extracolsep{1cm}} c c l l @{}}
+    \toprule
+    \textbf{Class} & \textbf{Date} & \textbf{Topics} & \textbf{Suggested readings}  \\ \toprule
+    \texttt{01} & 01/03 & Intro \& Pre-Quiz & ItE 1--6 \\
+    \texttt{02} & 01/05 & Review & ItE 1--6; MM 2 \\
+    \texttt{03} & 01/10 & Review & ItE 1--6; MM 2 \\
+    \texttt{04} & 01/12 & Review & ItE 1--7 \\
+    \texttt{04} & 01/17 & \textbf{Martin Luther King, Jr Day} (no class) \\
+    \texttt{05} & 01/19 & Heteroskedasticity & ItE 7 \\
+    \texttt{05} & 01/24 & \textit{Flexible} \\
+    \texttt{06} & 01/26 & Consistency (and Inconsistency) & ItE pp. 68--75  \\
+    \texttt{09} & 01/31 & Time Series & ItE 11  \\
+    \texttt{09} & 02/02 & Time Series & ItE 11  \\
+    \texttt{10} & 02/07 & Midterm Review & ItE 12 \\ 
+    \midrule
+    \texttt{11} & 02/09 & \textbf{Midterm and project} \\ 
+    \midrule
+    \texttt{13} & 02/14 & Autocorrelation \& Nonstationarity & ItE 12 \& 13 \\
+    \texttt{14} & 02/16 & \textit{Flexible} \\
+    \texttt{15} & 02/21 & Causality & MM 1 \\
+    \texttt{16} & 02/23 & Instrumental Variables & ItE 9; MM 3 \\
+    \texttt{17} & 02/28 & Instrumental Variables & ItE 9; MM 3 \\
+    \texttt{18} & 03/02 & Panel Data Methods & ItE 14; MM 5 \\
+    \texttt{19} & 03/07 & Panel Data Methods & ItE 14; MM 5 \\
+    \texttt{20} & 03/09 & Difference in differences & MM 5 \\
+    \midrule
+    \texttt{  } & 03/10 & \textbf{Final project due} \\
+    \texttt{  } & 03/15 & \textbf{Final exam, 2:45p--4:45p} & \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\end{document}
