@@ -10,6 +10,10 @@ The slides below (linked by their topic) are .html files that will only work pro
 
 1. [The introduction to "Introduction to Econometrics"](https://raw.githack.com/edrubin/EC421W22/master/notes/01-intro/01-intro.html) <br> [PDF](https://raw.githack.com/edrubin/EC421W22/master/notes/01-intro/01-intro.pdf) | [.Rmd](https://github.com/edrubin/EC421W22/blob/master/notes/01-intro/01-intro.Rmd)
 
+2. [Review of key math/stat/metrics topics](https://raw.githack.com/edrubin/EC421W22/master/notes/02-review/02-review.html)<br>Density functions, deriving the OLS estimators, properties of estimators, statistical inference (standard errors, confidence intervals, hypothesis testing), simulation <br> [PDF](https://raw.githack.com/edrubin/EC421W22/master/notes/02-review/02-review.pdf) | [.Rmd](https://github.com/edrubin/EC421W22/blob/master/notes/02-review/02-review.Rmd)
+
+3. [Review of key topics from EC320](https://raw.githack.com/edrubin/EC421W22/master/notes/03-review/03-review.html)<br>(the first course in our intro-to-metrics sequence) <br> [PDF](https://raw.githack.com/edrubin/EC421W22/master/notes/03-review/03-review.pdf) | [.Rmd](https://github.com/edrubin/EC421W22/blob/master/notes/03-review/03-review.Rmd)
+
 ## Problem sets
 
 Soon
