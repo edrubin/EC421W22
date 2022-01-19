@@ -1,11 +1,5 @@
 
-# Temporary holds
-final/*
-midterm/*
-other-docs/*
-problem-sets/*
-projects/*
-notes/04*
+# Temporary holds: Lecture
 notes/05*
 notes/06*
 notes/07*
@@ -13,6 +7,13 @@ notes/08*
 notes/09*
 notes/10*
 notes/11*
+
+# Temporary holds: Misc
+final/*
+midterm/*
+other-docs/*
+problem-sets/*
+projects/*
 
 # Project-specific files
 problem-sets/001/acs-pull.dta
