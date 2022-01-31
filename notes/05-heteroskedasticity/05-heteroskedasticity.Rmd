@@ -880,7 +880,7 @@ summary(test_reg, vcov = 'hetero')
 
 ```{r, fixest2b, echo = F}
 test_het_out <- summary(test_reg, vcov = 'hetero') %>% capture.output()
-test_het_out[10:13] %>% paste0("\n") %>% cat()
+test_het_out[4:7] %>% paste0("\n") %>% cat()
 ```
 
 ---
@@ -893,7 +893,7 @@ summary(test_reg, vcov = 'hetero')
 
 ```{r, fixest4, echo = F}
 test_het_out <- summary(test_reg, vcov = 'hetero') %>% capture.output()
-test_het_out[10:13] %>% paste0("\n") %>% cat()
+test_het_out[4:7] %>% paste0("\n") %>% cat()
 ```
 
 Ceofficients and **plain OLS standard errors** (assumes homoskedasticity):
@@ -904,7 +904,7 @@ summary(test_reg, vcov = 'iid')
 
 ```{r, fixest6, echo = F}
 test_hom_out <- summary(test_reg, vcov = 'iid') %>% capture.output()
-test_hom_out[10:13] %>% paste0("\n") %>% cat()
+test_hom_out[4:7] %>% paste0("\n") %>% cat()
 ```
 
 ---
@@ -1027,7 +1027,7 @@ test_wls_out[11:14] %>% paste0("\n") %>% cat()
 The .hi[OLS estimates] and .hi[het.-robust standard errors:]
 ```{r, wls4, echo = F}
 # Print the coefficients
-test_het_out[10:13] %>% paste0("\n") %>% cat()
+test_het_out[4:7] %>% paste0("\n") %>% cat()
 ```
 
 ---
