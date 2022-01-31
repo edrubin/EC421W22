@@ -16,6 +16,8 @@ The slides below (linked by their topic) are .html files that will only work pro
 
 4. [Heteroskedasticity: Tests and implications](https://raw.githack.com/edrubin/EC421W22/master/notes/04-heteroskedasticity/04-heteroskedasticity.html) <br> [PDF](https://raw.githack.com/edrubin/EC421W22/master/notes/04-heteroskedasticity/04-heteroskedasticity.pdf) | [.Rmd](https://github.com/edrubin/EC421W22/blob/master/notes/04-heteroskedasticity/04-heteroskedasticity.Rmd)
 
+5. [Heteroskedasticity: Living with it](https://raw.githack.com/edrubin/EC421W22/master/notes/05-heteroskedasticity/05-heteroskedasticity.html) <br> [PDF](https://raw.githack.com/edrubin/EC421W22/master/notes/05-heteroskedasticity/05-heteroskedasticity.pdf) | [.Rmd](https://github.com/edrubin/EC421W22/blob/master/notes/05-heteroskedasticity/05-heteroskedasticity.Rmd)
+
 ## Problem sets
 
 Soon
