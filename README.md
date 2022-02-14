@@ -18,14 +18,6 @@ The slides below (linked by their topic) are .html files that will only work pro
 
 5. [Heteroskedasticity: Living with it](https://raw.githack.com/edrubin/EC421W22/master/notes/05-heteroskedasticity/05-heteroskedasticity.html) <br> [PDF](https://raw.githack.com/edrubin/EC421W22/master/notes/05-heteroskedasticity/05-heteroskedasticity.pdf) | [.Rmd](https://github.com/edrubin/EC421W22/blob/master/notes/05-heteroskedasticity/05-heteroskedasticity.Rmd)
 
-## Problem sets
+6. [Consistency and OLS in asymptopia](https://raw.githack.com/edrubin/EC421W22/master/notes/06-consistency/06-consistency.html) <br> [PDF](https://raw.githack.com/edrubin/EC421W22/master/notes/06-consistency/06-consistency.pdf) | [.Rmd](https://github.com/edrubin/EC421W22/blob/master/notes/06-consistency/06-consistency.Rmd)
 
-Soon
-
-## Midterm
-
-Later
-
-## Final
-
-Latest
+7. [Introduction to time series](https://raw.githack.com/edrubin/EC421W22/master/notes/07-time-series/07-time-series.html) <br> [PDF](https://raw.githack.com/edrubin/EC421W22/master/notes/07-time-series/07-time-series.pdf) | [.Rmd](https://github.com/edrubin/EC421W22/blob/master/notes/07-time-series/07-time-series.Rmd)
