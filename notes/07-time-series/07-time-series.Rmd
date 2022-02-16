@@ -106,14 +106,8 @@ theme_axes <- theme_void() + theme(
   plot.margin = structure(c(1, 0, 1, 0), unit = "lines", valid.unit = 3L, class = "unit"),
   legend.position = "none"
 )
-```
-
-```{css echo = F}
-@media print {
-  .has-continuation {
-    display: block !important;
-  }
-}
+# A few extras
+xaringanExtra::use_xaringan_extra(c("tile_view", "fit_screen"))
 ```
 
 # Prologue
@@ -129,7 +123,7 @@ Asymptotics, probability limits, and consistency
 
 ## Today
 
-- Time series
+Time series
 
 ---
 # EC 421

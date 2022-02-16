@@ -21,3 +21,5 @@ The slides below (linked by their topic) are .html files that will only work pro
 6. [Consistency and OLS in asymptopia](https://raw.githack.com/edrubin/EC421W22/master/notes/06-consistency/06-consistency.html) <br> [PDF](https://raw.githack.com/edrubin/EC421W22/master/notes/06-consistency/06-consistency.pdf) | [.Rmd](https://github.com/edrubin/EC421W22/blob/master/notes/06-consistency/06-consistency.Rmd)
 
 7. [Introduction to time series](https://raw.githack.com/edrubin/EC421W22/master/notes/07-time-series/07-time-series.html) <br> [PDF](https://raw.githack.com/edrubin/EC421W22/master/notes/07-time-series/07-time-series.pdf) | [.Rmd](https://github.com/edrubin/EC421W22/blob/master/notes/07-time-series/07-time-series.Rmd)
+
+8. [Autocorrelated disturbances](https://raw.githack.com/edrubin/EC421W22/master/notes/08-autocorrelation/08-autocorrelation.html)<br>Implications, testing, and estimation. Also: introduction `ggplot2` and user-defined functions. <br> [PDF](https://raw.githack.com/edrubin/EC421W22/master/notes/08-autocorrelation/08-autocorrelation.pdf) | [.Rmd](https://github.com/edrubin/EC421W22/blob/master/notes/08-autocorrelation/08-autocorrelation.Rmd)
